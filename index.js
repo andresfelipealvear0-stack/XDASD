@@ -4,8 +4,8 @@ const axios = require('axios');
 const app = express();
 const port = 3000;
 
-// Reemplaza con tus propios valores
-const DISCORD_BOT_TOKEN = 'MTQxNzYzMTk4MzE3NzA0NDA5MA.G17L0s.mRqkulPxPpRjwwpCsxbc8qz6Yb6LR_-XdEhoc0'
+// Asegúrate de pegar tus valores entre comillas.
+const DISCORD_BOT_TOKEN = 'MTQxNzYzMTk4MzE3NzA0NDA5MA.G17L0s.mRqkulPxPpRjwwpCsxbc8qz6Yb6LR_-XdEhoc0';
 const DISCORD_GUILD_ID = '1391103791750844507';
 const REQUIRED_ROLE_ID = '1399515623834521660';
 
@@ -56,5 +56,4 @@ app.post('/check-role', async (req, res) => {
 
 app.listen(port, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);
-
 });
